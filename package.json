@@ -1,0 +1,42 @@
+{
+  "name": "logdna-bunyan",
+  "version": "1.0.0",
+  "description": "LogDNA's Node.js logging module with support for Bunyan",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logdna/logdna-bunyan.git"
+  },
+  "keywords": [
+    "logdna",
+    "logs",
+    "logging",
+    "bunyan",
+    "logdna.com",
+    "logger",
+    "node",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Answerbook Inc.",
+    "email": "help@logdna.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/logdna/logdna-bunyan/issues"
+  },
+  "homepage": "https://github.com/logdna/logdna-bunyan#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "gulp": "^3.9.1",
+    "gulp-exit": "0.0.2",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "logdna": "^2.0.0"
+  }
+}
