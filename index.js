@@ -36,14 +36,14 @@ class BunyanStream extends EventEmitter {
         var opts = {
             level: levels[record.level]
             , app: record.name
-            , context: record
+            , context: Object.assign({}, record)
         };
 
         // remove duplicate fields
-        delete record.level;
-        delete record.timestamp;
-        delete record.name;
-        delete record.msg;
+        delete opts.context.level;
+        delete opts.context.timestamp;
+        delete opts.context.name;
+        delete opts.context.msg;
 
         try {
             this.logger.log(message, opts);
