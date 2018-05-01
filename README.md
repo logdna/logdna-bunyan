@@ -10,8 +10,8 @@
 ---
 
 * **[Install](#install)**
+* **[API](#api)**
 * **[Bunyan Stream](#bunyan-stream)**
-* **[AWS Lambda Support](#aws-lambda-support)**
 * **[License](#license)**
 
 
@@ -20,6 +20,10 @@
 ```javascript
 $ npm install --save logdna-bunyan
 ```
+
+## API
+
+Please see the [logdna](https://github.com/logdna/nodejs/) npm module for the API.
 
 ## Bunyan Stream
 
