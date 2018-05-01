@@ -1,7 +1,5 @@
 'use strict';
 
-var util = require('util');
-
 var EventEmitter = require('events').EventEmitter;
 var Logger = require('logdna').Logger;
 
@@ -37,6 +35,7 @@ class BunyanStream extends EventEmitter {
             level: levels[record.level]
             , app: record.name
             , context: Object.assign({}, record)
+            , index_meta: true
         };
 
         // remove duplicate fields
