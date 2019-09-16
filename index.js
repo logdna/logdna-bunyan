@@ -1,8 +1,10 @@
 'use strict';
 
-var EventEmitter = require('events').EventEmitter;
-var Logger = require('logdna').Logger;
+// External Modules
+const EventEmitter = require('events').EventEmitter;
+const Logger = require('logdna').Logger;
 
+// Constants
 const levels = {
     10: 'TRACE'
     , 20: 'DEBUG'
@@ -17,11 +19,11 @@ const levels = {
  */
 class BunyanStream extends EventEmitter {
     constructor(options) {
+        const pkg = require('./package.json');
         super();
-
-        options = options || {};
-
-        this.logger = new Logger(options.key, options);
+        this.logger = new Logger(options.key, Object.assign({}, options, {
+            UserAgent: `${pkg.name}/${pkg.version}`
+        });
     }
 
     write(record) {
