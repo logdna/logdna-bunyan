@@ -23,7 +23,7 @@ class BunyanStream extends EventEmitter {
         super();
         this.logger = new Logger(options.key, Object.assign({}, options, {
             UserAgent: `${pkg.name}/${pkg.version}`
-        });
+        }));
     }
 
     write(record) {
