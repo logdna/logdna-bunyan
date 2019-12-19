@@ -21,6 +21,7 @@ class BunyanStream extends EventEmitter {
     constructor(options) {
         const pkg = require('./package.json');
         super();
+
         this.logger = new Logger(options.key, Object.assign({}, options, {
             UserAgent: `${pkg.name}/${pkg.version}`
         }));
@@ -30,7 +31,7 @@ class BunyanStream extends EventEmitter {
 
         // LogDNA adds their own - lets assume the time delta is trivial
         // record['timestamp'] = record.time;
-
+        console.log(record)
         var message = record.msg;
 
         var opts = {
@@ -38,8 +39,9 @@ class BunyanStream extends EventEmitter {
             , app: record.name
             , context: Object.assign({}, record)
             , index_meta: true
+            , hostname: record.hostname
         };
-
+      
         // remove duplicate fields
         delete opts.context.level;
         delete opts.context.timestamp;
