@@ -30,6 +30,7 @@ class BunyanStream extends EventEmitter {
 
         // LogDNA adds their own - lets assume the time delta is trivial
         // record['timestamp'] = record.time;
+
         var message = record.msg;
 
         var opts = {
