@@ -38,8 +38,8 @@ class BunyanStream extends EventEmitter {
             , app: record.name
             , context: Object.assign({}, record)
             , index_meta: true
+            , hostname: record.hostname
         };
-
         // remove duplicate fields
         delete opts.context.level;
         delete opts.context.timestamp;
