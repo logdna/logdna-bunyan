@@ -30,7 +30,9 @@
   },
   "homepage": "https://github.com/logdna/logdna-bunyan#readme",
   "dependencies": {
-    "eslint": "^6.5.1",
     "logdna": "^3.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1"
   }
 }
