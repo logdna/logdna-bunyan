@@ -1,7 +1,7 @@
 'use strict'
 
 const {EventEmitter} = require('events')
-const Logger = require('logdna').Logger
+const {createLogger} = require('@logdna/logger')
 const pkg = require('./package.json')
 
 // Constants
@@ -17,41 +17,43 @@ const levels = {
 /*
  *  Support for Bunyan Transport
  */
-class BunyanStream extends EventEmitter {
+class LogDNAStream extends EventEmitter {
   constructor(options) {
     super()
-    this.logger = new Logger(options.key, {
+    this.logger = createLogger(options.key, {
       ...options
+    , indexMeta: true
     , UserAgent: `${pkg.name}/${pkg.version}`
+    })
+
+    this.logger.on('error', (err) => {
+      this.emit('error', err)
     })
   }
 
   write(record) {
 
-    // LogDNA adds their own - lets assume the time delta is trivial
-    // record['timestamp'] = record.time;
+    const {
+      msg: message
+    , level
+    , name: app
+    , hostname
+    , timestamp // Bunyan provides timestamp, so just use that for LogDNA's time as well
+    , ...meta
+    } = record
 
-    var message = record.msg
-
-    var opts = {
-      level: levels[record.level]
-    , app: record.name
-    , context: {...record}
-    , index_meta: true
-    , hostname: record.hostname
+    const opts = {
+      level: levels[level]
+    , app
+    , meta: {
+        ...meta
+      , hostname
+      }
+    , timestamp
     }
-    // remove duplicate fields
-    delete opts.context.level
-    delete opts.context.timestamp
-    delete opts.context.name
-    delete opts.context.msg
 
-    try {
-      this.logger.log(message, opts)
-    } catch (err) {
-      this.emit('error', err)
-    }
+    this.logger.log(message, opts)
   };
 }
 
-module.exports.BunyanStream = BunyanStream
+module.exports = LogDNAStream
