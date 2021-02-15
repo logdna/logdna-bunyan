@@ -1,9 +1,9 @@
 'use strict'
 
-const LogDNAStream = require('../index.js')
 const {test} = require('tap')
 const nock = require('nock')
 const bunyan = require('bunyan')
+const LogDNAStream = require('../index.js')
 
 nock.disableNetConnect()
 
@@ -237,7 +237,7 @@ test('Errors emitted by @logdna/logger are bubbled up to bunyan', (t) => {
 
   logger.on('error', (err) => {
     t.type(err, Error, 'Got error')
-    t.equal(err.message, 'FAKE ERROR', 'Error message is as expected')
+    t.strictEqual(err.message, 'FAKE ERROR', 'Error message is as expected')
   })
 
   const error = new Error('FAKE ERROR')
