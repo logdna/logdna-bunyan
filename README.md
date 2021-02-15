@@ -1,6 +1,6 @@
 <p align="center">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
   <a href="https://app.logdna.com">
     <img height="95" width="201" src="https://raw.githubusercontent.com/logdna/artwork/master/logo%2Bnode.png">
@@ -63,13 +63,6 @@ logger.info('Starting application on port %d', app.get('port'))
 *NOTE*: You _must_ use the `raw` stream type, and also `reemitErrorEvents` _must_ be
 `true`.  Otherwise, errors emitted by `@logdna/logger` will throw Bunyan.
 
-## License
-
-Copyright © [LogDNA](https://logdna.com), released under an MIT license.
-See the [LICENSE](./LICENSE) file and https://opensource.org/licenses/MIT
-
-*Happy Logging!*
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -85,6 +78,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/vilyapilya"><img src="https://avatars.githubusercontent.com/u/17367511?v=4?s=100" width="100px;" alt=""/><br /><sub><b>vilyapilya</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=vilyapilya" title="Code">💻</a> <a href="#tool-vilyapilya" title="Tools">🔧</a></td>
     <td align="center"><a href="https://github.com/s100"><img src="https://avatars.githubusercontent.com/u/9932290?v=4?s=100" width="100px;" alt=""/><br /><sub><b>s100</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=s100" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/racbart"><img src="https://avatars.githubusercontent.com/u/26409542?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bartek R.</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=racbart" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/mdeltito"><img src="https://avatars.githubusercontent.com/u/69520?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mike Del Tito</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=mdeltito" title="Code">💻</a> <a href="#tool-mdeltito" title="Tools">🔧</a></td>
   </tr>
 </table>
 
@@ -94,3 +88,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## License
+
+Copyright © [LogDNA](https://logdna.com), released under an MIT license.
+See the [LICENSE](./LICENSE) file and https://opensource.org/licenses/MIT
+
+*Happy Logging!*
