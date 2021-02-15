@@ -1,6 +1,6 @@
 <p align="center">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
   <a href="https://app.logdna.com">
     <img height="95" width="201" src="https://raw.githubusercontent.com/logdna/artwork/master/logo%2Bnode.png">
@@ -84,6 +84,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/darinspivey"><img src="https://avatars.githubusercontent.com/u/1874788?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Darin Spivey</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=darinspivey" title="Code">💻</a> <a href="https://github.com/logdna/logdna-bunyan/commits?author=darinspivey" title="Documentation">📖</a> <a href="#tool-darinspivey" title="Tools">🔧</a></td>
     <td align="center"><a href="https://github.com/vilyapilya"><img src="https://avatars.githubusercontent.com/u/17367511?v=4?s=100" width="100px;" alt=""/><br /><sub><b>vilyapilya</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=vilyapilya" title="Code">💻</a> <a href="#tool-vilyapilya" title="Tools">🔧</a></td>
     <td align="center"><a href="https://github.com/s100"><img src="https://avatars.githubusercontent.com/u/9932290?v=4?s=100" width="100px;" alt=""/><br /><sub><b>s100</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=s100" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/racbart"><img src="https://avatars.githubusercontent.com/u/26409542?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bartek R.</b></sub></a><br /><a href="https://github.com/logdna/logdna-bunyan/commits?author=racbart" title="Code">💻</a></td>
   </tr>
 </table>
 
