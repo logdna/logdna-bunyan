@@ -3,6 +3,11 @@
   "version": "2.0.2",
   "description": "LogDNA's Node.js logging module with support for Bunyan",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
@@ -11,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/logdna/logdna-bunyan.git"
+    "url": "git+ssh://git@github.com/logdna/logdna-bunyan.git"
   },
   "keywords": [
     "logdna",
